@@ -16,8 +16,8 @@ const projects = [
 
 function Work() {
     return (
-        <div className = "work-section">
-            <h2 className = "work-title">Selected Work</h2>
+        <div className = "work-section space-y-8">
+            <h2 className = "work-title text-x1 font-semibold">Selected Work</h2>
             {projects.map((project, index)=>(
                 <Project
                     key ={index}

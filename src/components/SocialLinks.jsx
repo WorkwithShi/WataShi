@@ -13,8 +13,9 @@ function SocialLinks(){
                 >
                     <img
                     src= {link.icon}
+                    loading="lazy"
                     alt = {`${link.name}icon`}
-                    className="social-icon"
+                    className="w-6 h-6"
                     />
                     <span>{link.name}</span>
                 </a>
