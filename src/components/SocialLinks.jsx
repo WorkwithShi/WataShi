@@ -15,7 +15,7 @@ function SocialLinks(){
                     src= {link.icon}
                     loading="lazy"
                     alt = {`${link.name}icon`}
-                    className="w-6 h-6"
+                    className="social-icon"
                     />
                     <span>{link.name}</span>
                 </a>
