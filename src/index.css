@@ -144,8 +144,22 @@ body { border: 2px solid red;}
 }
 
 .links a:hover {
-  color: rgb(132, 221, 251);
-  opacity: 1;
+  color: rgb(255, 255, 255);
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+.links a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #facc15;
+  transition: width 0.3s ease-in-out;
 }
 
 .project {
