@@ -1,9 +1,9 @@
 import { userData } from "../data.js";
 
-function SocialLinks(){
+function SocialLinks() {
     return (
         <div className="social-links">
-            {userData.social.map((link, index)=>(
+            {userData.social.map((link, index) => (
                 <a
                     key={index}
                     href={link.url}
@@ -12,17 +12,17 @@ function SocialLinks(){
                     className="social-link"
                 >
                     <img
-                    src= {link.icon}
-                    loading="lazy"
-                    alt = {`${link.name}icon`}
-                    className="social-icon"
+                        src={link.icon}
+                        alt={`${link.name} icon`}
+                        className="social-icon"
+                        loading="lazy"
                     />
                     <span>{link.name}</span>
                 </a>
             ))}
         </div>
-
     );
 }
+
 
 export default SocialLinks;
