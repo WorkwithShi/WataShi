@@ -1,5 +1,5 @@
 import { useState } from "react";
-import GalleryModal from "./GalleryModal"; // We’ll make this component next!
+import GalleryModal from "./GalleryModal"; 
 
 function Project({ title, description, link, image, embed, tags = [], images = [] }) {
 

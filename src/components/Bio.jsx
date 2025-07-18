@@ -9,7 +9,7 @@ export default function Bio() {
   return (
     <section className="section-wrapper" id="about">
       <div className="bio-grid">
-        {/* LEFT COLUMN - ABOUT */}
+        {/* ABOUT */}
         <div className="about-text">
           <p>
             Shi (She/Her) is a creative individual and curious learner with a creative edge, 
@@ -26,7 +26,7 @@ export default function Bio() {
           {showModal && <SecretModal onClose={() => setShowModal(false)} />}
         </div>
 
-        {/* RIGHT SECTION - SKILLS */}
+        {/* SKILLS */}
         <div className="skills-grid" id="skills-section">
           <div className="skill-label">Frontend</div>
           <div className="skill-detail">HTML, CSS, JavaScript, React.js, Tailwind CSS, Svelte<sup>1</sup></div>

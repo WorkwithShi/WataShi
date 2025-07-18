@@ -106,7 +106,7 @@ function Work() {
   image={project.image}
   embed={project.embed}
   tags={project.tags}
-  images={project.images} // 👈 This is missing!
+  images={project.images} 
 />
 
         ))}

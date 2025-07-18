@@ -6,14 +6,14 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        {/* Left Section */}
+      
         <div className="footer-left">
           <h3>Connect:</h3>
           <SocialLinks />
           
         </div>
 
-        {/* Middle Section */}
+    
         <div className="footer-middle">
           <ul className="footnote-list">
             <li><sup>1</sup> Beginner</li>
@@ -23,7 +23,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Right Section */}
         <div className="footer-contact">
           <h4>Up for a collaboration? Drop me a mail</h4>
           <p className="email">
@@ -34,7 +33,7 @@ export default function Footer() {
         </div>
       </div>
       
-      {/* Bottom Center Text */}
+    
       <div className="footer-bottom-center">
         © Lines of code and love by{" "}
         <span className="logo">Shi</span>. Inspired by{" "}

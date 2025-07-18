@@ -1,4 +1,4 @@
-/* Reset and Box Sizing */
+
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +28,7 @@ html, body, #root {
 html {
   scroll-behavior: smooth;
 }
+
 /* Headings */
 h1, h2, h3 {
   font-weight: 500;
@@ -58,7 +59,7 @@ a::after {
 }
 
 
-/* Fix hover underline and opacity for social links */
+
 a.social-link::after {
   display: none !important;
   content: none !important;
@@ -369,19 +370,19 @@ a.social-link:hover {
   gap: 0.5rem;
   padding: 0;
   margin: 0;
-  border: none; /* remove red debug border */
+  border: none; 
   background: none;
 }
 
 .social-link {
-  display: inline-flex; /* ✅ FIXED: Use inline-flex to prevent wrapping */
+  display: inline-flex; 
   align-items: center;
   gap: 0.5rem;
   color: #ccc;
   text-decoration: none;
   margin: 0;
   padding: 0;
-  background: none; /* 🧼 Remove blue debug background */
+  background: none; 
 }
 
 .social-link span {
@@ -395,11 +396,11 @@ a.social-link:hover {
   object-fit: contain;
   filter: invert(1);
   opacity: 0.8;
-  background: none; /* 🧼 remove debug bg */
+  background: none; 
 }
 
 
-/* Responsive */
+
 @media (max-width: 600px) {
   .name-title-group {
     flex-direction: column;
@@ -464,7 +465,7 @@ a.social-link:hover {
   
 }
 
-/* NEW: Middle Section (Footnotes) */
+
 .footer-middle {
   flex: 1;
   min-width: 200px;
@@ -488,7 +489,6 @@ a.social-link:hover {
   margin-right: 0.4rem;
 }
 
-/* NEW: Right Section (Contact Email) */
 .footer-contact {
   flex: 1;
   min-width: 200px;
@@ -517,7 +517,7 @@ a.social-link:hover {
   color: #ffffff;
 }
 
-/* Bottom Centered Text */
+
 .footer-bottom-center {
   width: 100%;
   text-align: center;
@@ -537,7 +537,7 @@ a.social-link:hover {
   color: #fff;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
@@ -567,7 +567,7 @@ a.social-link:hover {
   align-items: flex-start;
 }
 
-/* About text block */
+
 .about-text {
   padding-left: 0.5rem;
   font-weight: 600;
@@ -578,14 +578,14 @@ a.social-link:hover {
   
 }
 
-/* Skills + Details wrapped together */
+
 .skills-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
   row-gap: 1.2rem;
   column-gap: 1.5rem;
-  padding-right: 0.5rem; /* Slightly reduced */
-  margin-left: -0.5rem;  /* New: nudges the whole block left */
+  padding-right: 0.5rem; 
+  margin-left: -0.5rem;  
 }
 
 .skill-label {
@@ -617,7 +617,7 @@ a.social-link:hover {
 
   .skills-grid {
     grid-template-columns: 1fr;
-    padding-right: 0; /* Remove extra padding on mobile */
+    padding-right: 0; 
   }
 
   .skill-label {

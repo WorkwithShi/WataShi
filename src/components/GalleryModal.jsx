@@ -10,7 +10,7 @@ function GalleryModal({ images, onClose }) {
   const nextImage = () =>
     setIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
 
-  // Close on Escape key
+  // Close on Esc key
   useEffect(() => {
     const handleKey = (e) => {
       if (e.key === "Escape") onClose();
