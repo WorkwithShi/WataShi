@@ -14,27 +14,27 @@ const sections = [
   {
     title: "Login Flow",
     icon: <LogIn size={20} />,
-    video: "/demos/Login.mp4",
+    video: "/demos/LoginDemo.mp4",
   },
   {
     title: "Admin Authentication",
     icon: <ShieldCheck size={20} />,
-    video: "/demos/Admin.mp4",
+    video: "/demos/AdminAuth.mp4",
   },
   {
     title: "Student Dashboard",
     icon: <User size={20} />,
-    video: "/demos/StudentDashboard.mp4",
+    video: "/demos/StudentDemo.mp4",
   },
   {
     title: "Faculty Dashboard",
     icon: <GraduationCap size={20} />,
-    video: "/demos/FacultyDashboard.mp4",
+    video: "/demos/FacultyDemo.mp4",
   },
   {
     title: "Admin Dashboard",
     icon: <Settings size={20} />,
-    video: "/demos/AdminDashboardDemo.mp4",
+    video: "/demos/AdminDemo.mp4",
   },
 ];
 
