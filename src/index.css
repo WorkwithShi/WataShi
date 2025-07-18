@@ -57,9 +57,6 @@ a::after {
   transition: width 0.3s ease-in-out;
 }
 
-a:hover::after {
-  width: 100%;
-}
 
 /* Fix hover underline and opacity for social links */
 a.social-link::after {
@@ -264,9 +261,17 @@ a.social-link:hover {
 /* Image styling */
 .project-media img {
   width: 100%;
-  height: 200px;
+  height: 350px;
   object-fit: cover;
+  background-color: white;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.project-media iframe {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  background-color: white;
+  border: none;
 }
 
 /* Project info section */
@@ -290,17 +295,32 @@ a.social-link:hover {
 }
 
 /* Hover overlay */
+.project-media-wrapper {
+  position: relative;
+}
+
 .project-hover {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(10, 10, 10, 0.8);
-  backdrop-filter: blur(0.5px);
+  backdrop-filter: blur(2px);
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: opacity 0.4s ease;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 2;
 }
+
+.project-media-wrapper:hover .project-hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 
 .project-card:hover .project-hover {
   opacity: 1;
@@ -320,6 +340,25 @@ a.social-link:hover {
 
 .project-hover button:hover {
   background-color: #00ccff;
+}
+
+.project-tags {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.tag-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: help;
+  transition: transform 0.2s ease;
+}
+
+.tag-dot:hover {
+  transform: scale(1.4);
 }
 
 
