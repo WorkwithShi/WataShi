@@ -14,22 +14,22 @@ const sections = [
   {
     title: "Login Flow",
     icon: <LogIn size={20} />,
-    video: "/demos/LoginPage.mp4",
+    video: "/demos/Login.mp4",
   },
   {
     title: "Admin Authentication",
     icon: <ShieldCheck size={20} />,
-    video: "/demos/AdminAuth.mp4",
+    video: "/demos/Admin.mp4",
   },
   {
     title: "Student Dashboard",
     icon: <User size={20} />,
-    video: "/demos/StudentDashboardDemo.mp4",
+    video: "/demos/StudentDashboard.mp4",
   },
   {
     title: "Faculty Dashboard",
     icon: <GraduationCap size={20} />,
-    video: "/demos/FacultyDashboardDemo.mp4",
+    video: "/demos/FacultyDashboard.mp4",
   },
   {
     title: "Admin Dashboard",
