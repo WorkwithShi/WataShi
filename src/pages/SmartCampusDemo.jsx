@@ -14,27 +14,27 @@ const sections = [
   {
     title: "Login Flow",
     icon: <LogIn size={20} />,
-    video: "/demos/LoginDemo.mp4",
+    video: "https://res.cloudinary.com/dong4ywhx/video/upload/v1753035553/LoginDemo_hksbfh.mp4",
   },
   {
     title: "Admin Authentication",
     icon: <ShieldCheck size={20} />,
-    video: "/demos/AdminAuth.mp4",
+    video: "https://res.cloudinary.com/dong4ywhx/video/upload/v1753035555/AdminAuth_rfurst.mp4",
   },
   {
     title: "Student Dashboard",
     icon: <User size={20} />,
-    video: "/demos/StudentDemo.mp4",
+    video: "https://res.cloudinary.com/dong4ywhx/video/upload/v1753035550/StudentDemo_qve7up.mp4",
   },
   {
     title: "Faculty Dashboard",
     icon: <GraduationCap size={20} />,
-    video: "/demos/FacultyDemo.mp4",
+    video: "https://res.cloudinary.com/dong4ywhx/video/upload/v1753035557/FacultyDemo_x5ja3x.mp4",
   },
   {
     title: "Admin Dashboard",
     icon: <Settings size={20} />,
-    video: "/demos/AdminDemo.mp4",
+    video: "https://res.cloudinary.com/dong4ywhx/video/upload/v1753035555/AdminDemo_uvqlrr.mp4",
   },
 ];
 
@@ -60,7 +60,12 @@ const SmartCampusDemo = () => {
                 {sec.icon} {sec.title}
               </h2>
               <div className="video-wrapper">
-                <video controls>
+                <video
+                  controls
+                  preload="auto"
+                  width="100%"
+                  style={{ borderRadius: "10px", maxHeight: "400px", background: "#000" }}
+                >
                   <source src={sec.video} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
